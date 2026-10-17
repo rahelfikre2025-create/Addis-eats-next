@@ -3341,6 +3341,14 @@ html.dark .home-highlights {
   padding-bottom: 32px;
 }
 
+.menu-page > .section-heading {
+  width: min(100%, 760px);
+  max-width: none;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+}
+
 .site-main:has(.menu-page),
 .site-main:has(.favorites-page) {
   flex: 0 0 auto;
