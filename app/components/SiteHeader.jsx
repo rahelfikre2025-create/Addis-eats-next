@@ -2,6 +2,7 @@ import Link from "next/link";
 import { signOutFromNavigation } from "../actions";
 import ThemeToggle from "./ThemeToggle";
 import CartNavLink from "./CartNavLink";
+import MobileNavigation from "./MobileNavigation";
 
 function NavigationLinks({ user }) {
   const isStaff = user?.role === "staff";
@@ -106,16 +107,9 @@ export default function SiteHeader({ user }) {
         {!isStaff && (
           <>
             <CartNavLink />
-            <details className="mobile-navigation">
-              <summary className="nav-toggle" aria-label="Open navigation menu">
-                <span />
-                <span />
-                <span />
-              </summary>
-              <nav className="site-nav mobile-nav" aria-label="Main navigation">
-                <NavigationLinks user={user} />
-              </nav>
-            </details>
+            <MobileNavigation>
+              <NavigationLinks user={user} />
+            </MobileNavigation>
           </>
         )}
       </div>
