@@ -1608,6 +1608,11 @@ body {
   color: var(--accent);
 }
 
+.cart-summary > .eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
 .summary-card h2 {
   font-size: 1.8rem;
 }
