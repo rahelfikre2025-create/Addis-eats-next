@@ -36,25 +36,25 @@ export default function RevenueChart({ data }) {
       <div
         role="img"
         aria-label="Bar chart comparing revenue across neighbourhoods. An equivalent data table follows."
-        className="w-full"
+        className="dashboard-chart-plot"
       >
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={data}
-            margin={{ top: 10, right: 20, left: 20, bottom: 10 }}
+            margin={{ top: 10, right: 10, left: 5, bottom: 10 }}
           >
             <CartesianGrid strokeDasharray="3 3" />
 
             <XAxis
               dataKey="area"
-              tick={{ fontSize: 12 }}
-              interval={0}
+              tick={{ fontSize: 10 }}
+              interval="preserveStartEnd"
             />
 
             <YAxis
               domain={[0, "auto"]}
               tickFormatter={(value) => etb.format(Number(value))}
-              width={100}
+              width={80}
             />
 
             <Tooltip
@@ -74,7 +74,7 @@ export default function RevenueChart({ data }) {
         </ResponsiveContainer>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="dashboard-chart-table overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
           <caption className="mb-2 text-left font-semibold">
             Order value by delivery area — equivalent chart data

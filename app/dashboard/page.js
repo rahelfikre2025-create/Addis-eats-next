@@ -139,7 +139,7 @@ export default async function DashboardPage() {
       title="Dashboard"
       description="A live overview of restaurant orders and operations."
     >
-    <main className="dashboard-page mx-auto max-w-7xl space-y-8 px-4 py-8">
+    <main className="dashboard-page mx-auto max-w-7xl px-4 py-8">
       <section aria-labelledby="dashboard-summary-heading">
         <h2 id="dashboard-summary-heading" className="sr-only">
           Order summary
@@ -185,7 +185,7 @@ export default async function DashboardPage() {
           </p>
         ) : (
           <div className="overflow-x-auto rounded-xl border">
-            <table className="w-full border-collapse text-left text-sm">
+            <table className="dashboard-orders-table w-full border-collapse text-left text-sm">
               <thead>
                 <tr className="border-b">
                   <th scope="col" className="px-3 py-3">Order</th>

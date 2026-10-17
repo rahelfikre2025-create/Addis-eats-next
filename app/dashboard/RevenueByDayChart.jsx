@@ -39,23 +39,24 @@ export default function RevenueByDayChart({ data }) {
       <div
         role="img"
         aria-label="Bar chart of daily order value in Ethiopian birr. An equivalent data table follows."
+        className="dashboard-chart-plot"
       >
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={data}
-            margin={{ top: 10, right: 20, left: 20, bottom: 10 }}
+            margin={{ top: 10, right: 10, left: 5, bottom: 10 }}
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis
               dataKey="date"
               tickFormatter={formatDate}
-              tick={{ fontSize: 12 }}
-              interval={0}
+              tick={{ fontSize: 10 }}
+              interval={1}
             />
             <YAxis
               domain={[0, "auto"]}
               tickFormatter={(value) => etb.format(Number(value))}
-              width={100}
+              width={80}
             />
             <Tooltip
               labelFormatter={(value) => formatDate(String(value))}
@@ -70,7 +71,7 @@ export default function RevenueByDayChart({ data }) {
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <div className="overflow-x-auto">
+      <div className="dashboard-chart-table overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
           <caption className="mb-2 text-left font-semibold">
             Daily order value — equivalent chart data

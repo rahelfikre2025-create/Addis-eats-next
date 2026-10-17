@@ -42,8 +42,9 @@ export default function OrdersOverTimeChart({ data }) {
       <div
         role="img"
         aria-label="Line chart showing daily order counts. An equivalent data table follows."
+        className="dashboard-chart-plot"
       >
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={data}
             margin={{ top: 10, right: 20, left: 5, bottom: 10 }}
@@ -52,7 +53,8 @@ export default function OrdersOverTimeChart({ data }) {
             <XAxis
               dataKey="date"
               tickFormatter={formatDate}
-              tick={{ fontSize: 12 }}
+              tick={{ fontSize: 10 }}
+              interval={1}
             />
             <YAxis
               allowDecimals={false}
@@ -80,7 +82,7 @@ export default function OrdersOverTimeChart({ data }) {
         </ResponsiveContainer>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="dashboard-chart-table overflow-x-auto">
         <table className="w-full border-collapse text-left text-sm">
           <caption className="mb-2 text-left font-semibold">
             Daily orders — equivalent chart data
