@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Doro Wat",
+    "description": "Traditional Ethiopian chicken stew served with injera.",
+    "price": 525,
+    "category": "Ethiopian",
+    "spicy": true,
+    "image": "/images/doro-menu.webp",
+    "imageWidth": 640,
+    "imageHeight": 361
+  },
+  {
+    "id": 2,
+    "name": "Tibs",
+    "description": "Tender sautéed beef with onions, peppers and Ethiopian spices.",
+    "price": 350,
+    "category": "Ethiopian",
+    "spicy": false,
+    "image": "/images/tibs-menu.webp",
+    "imageWidth": 640,
+    "imageHeight": 426
+  },
+  {
+    "id": 3,
+    "name": "Kitfo",
+    "description": "Minced beef seasoned with Ethiopian spices and clarified butter.",
+    "price": 450,
+    "category": "Ethiopian",
+    "spicy": true,
+    "image": "/images/kitfo-menu.webp",
+    "imageWidth": 474,
+    "imageHeight": 355
+  },
+  {
+    "id": 4,
+    "name": "Kurt",
+    "description": "Fresh Ethiopian-style raw beef dish served with traditional sides.",
+    "price": 400,
+    "category": "Ethiopian",
+    "spicy": false,
+    "image": "/images/kurt-menu.webp",
+    "imageWidth": 474,
+    "imageHeight": 355
+  },
+  {
+    "id": 5,
+    "name": "Classic Burger",
+    "description": "Juicy beef burger with fresh vegetables and house sauce.",
+    "price": 300,
+    "category": "Burgers",
+    "spicy": false,
+    "image": "/images/bburger-menu.webp",
+    "imageWidth": 640,
+    "imageHeight": 358
+  },
+  {
+    "id": 6,
+    "name": "Cheese Burger",
+    "description": "Freshly baked burger topped with mozzarella and tomato sauce.",
+    "price": 550,
+    "category": "Burgers",
+    "spicy": false,
+    "image": "/images/burger-menu.webp",
+    "imageWidth": 474,
+    "imageHeight": 316
+  },
+  {
+    "id": 7,
+    "name": "Spicy Pizza",
+    "description": "Pizza topped with spicy beef, peppers and melted cheese.",
+    "price": 600,
+    "category": "Pizza",
+    "spicy": true,
+    "image": "/images/pizz-menu.webp",
+    "imageWidth": 640,
+    "imageHeight": 372
+  },
+  {
+    "id": 8,
+    "name": "Mango Juice",
+    "description": "Freshly prepared mango juice.",
+    "price": 120,
+    "category": "Drinks",
+    "spicy": false,
+    "image": "/images/mango-menu.webp",
+    "imageWidth": 474,
+    "imageHeight": 316
+  }
+]
