@@ -2721,6 +2721,7 @@ html.dark .desktop-nav .nav-link:focus-visible {
 
 @media (max-width: 700px) {
   .site-header {
+    z-index: 20;
     width: 100%;
     min-height: 68px;
     padding: 10px 16px;

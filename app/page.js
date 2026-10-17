@@ -3,6 +3,40 @@ import Link from "next/link";
 import dishes from "../public/menu-data.json";
 import DishCard from "./components/DishCard";
 
+const homeTitle = "Addis Eats — food delivery in Addis Ababa";
+const homeDescription =
+  "Order delicious Ethiopian food from Addis Eats and enjoy fresh meals delivered across Addis Ababa.";
+const homeImage = "https://addiseats.et/images/hroo.jpg";
+
+export const metadata = {
+  title: {
+    absolute: homeTitle,
+  },
+  description: homeDescription,
+  openGraph: {
+    title: homeTitle,
+    description: homeDescription,
+    url: "/",
+    siteName: "Addis Eats",
+    locale: "en_ET",
+    type: "website",
+    images: [
+      {
+        url: "/images/hroo.jpg",
+        width: 1200,
+        height: 676,
+        alt: "A traditional Ethiopian meal prepared for sharing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: homeTitle,
+    description: homeDescription,
+    images: [homeImage],
+  },
+};
+
 export default function HomePage() {
   const specials = dishes.slice(0, 3);
 
